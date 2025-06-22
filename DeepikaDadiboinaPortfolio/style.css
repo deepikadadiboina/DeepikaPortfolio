@@ -1,0 +1,238 @@
+/* style.css */
+
+/* Global settings */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.logo span {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+/* Hero section */
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+  background: radial-gradient(circle at center, #111 60%, #000);
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid red;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: red;
+  text-shadow: 0 0 10px red;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: red;
+}
+
+.btn {
+  background: red;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff3333;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* About */
+.about p.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Skills */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Education Timeline */
+.timeline {
+  border-left: 4px solid red;
+  padding-left: 20px;
+}
+
+.timeline .event {
+  background: #111;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+/* Cards: Projects and Certificates */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid red;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-grid .info p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background: red;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #ff3333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+}
